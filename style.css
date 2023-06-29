@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
+root {
+    --mainBGcolor: #CDC2AE;
+    --soft-peachy-orange: #F99157;
+    --greenish-blue: #73C8A9;
+    --pale-yellow: #F3E5AB;
+    --muted-pink: #DAB9BF;
+    --dusty-teal: #7FB0A6;
+    --light-beige: #E5D3C3;
+    --very-dark-gray: #1A1A1A;
+    --very-light-off-white: #FCFCFC;
+
+}
+
+body {
+    background: radial-gradient(var(), var(), var()),
+    radial-gradient(var(), var(), var());
+}
+
+.body{
+    font-family: Varela Round, sans-serif;
+}
+
+.bodyContainer {
+    background-color: aqua;
+    height: 50vh;
+}
+
+.display-1 {
+    color: var(--muted-pink);
+    text-shadow: 0 2px 80px var(--very-dark-gray);
+    transition: all 1s ease-in-out;
+}
+
+/*hover - active - visited - focus*/
+.display-1:hover {
+    color: var(--pale-yellow);
+}
+
+/*Descendant Selector | Child Selector */
+.display-1 code {
+    padding: 10px;
+    background-color: var(--dusty-teal);
+    box-shadow: 5px 5px 5px var(--mainBGcolor);
+    border-radius: 8px;
+    transition: all 1s linear;
+}
+.display-1 code:hover {
+    color: var(--muted-pink);
+}
+
+
+#todoUL {
+    max-height: 50vh;
+    overflow-y: auto;
+}
+
+
+/*Css Animations and KeyFrames*/
+.bodyContainer {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%),
+    radial-gradient(circle at 70% 50%, #90dffe 0%, #38a3d1 45%, #2e3192 60%, #227093 90%);
+    background-size: 200% 200%;
+    -webkit-animation: CC24Animation 12s ease-in-out infinite;
+    /*background-blend-mode: multiply, multiply;*/
+}
+
+@-webkit-keyframes CC24Animation {
+    /*0% {*/
+    /*    background-position: 0 50%;*/
+    /*}*/
+
+    /*50% {*/
+    /*    background-position: 100% 50%;*/
+    /*}*/
+
+    /*100% {*/
+    /*    background-position: 0 50%;*/
+    /*}*/
+
+    0% {
+        background-position: 0 0;
+    }
+    25% {
+        background-position: 100% 0;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    75% {
+        background-position: 0 100%;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+mark {
+    -webkit-background-repeat: no-repeat;
+    -webkit-background-clip: content-box;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.img-fluid {
+    margin-top: 100px;
+    /* Adjust this value to match the height of your navigation bar */
+}
+
+.content-container {
+    padding-top: 50px;
+    /* Adjust this value to match the height of your navigation bar */
+    margin-top: 0;
+    transition: padding-top 0.3s ease-in-out;
+}
+
+footer {
+    /* ... other CSS properties ... */
+        /* Replace with your desired background color */
+    text-align: center;
+}
